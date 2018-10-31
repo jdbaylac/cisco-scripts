@@ -1,0 +1,5 @@
+#!/bin/bash
+for i in $(seq 1 47 )
+ do echo "int range gigabitEthernet 1/0/$i, gigabitEthernet 2/0/$i";
+  echo "channel-group $i mode active";
+done;
